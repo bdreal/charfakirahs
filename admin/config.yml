@@ -6,11 +6,12 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-      - file: "content/home.md"
-        label: "Home"
-        name: "home"
-        fields:
-          - {label: "Content", name: "body", widget: "markdown"}
+  - name: "notices"
+    label: "নোটিশ"
+    folder: "content/notices"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "শিরোনাম", name: "title", widget: "string" }
+      - { label: "বর্ণনা", name: "body", widget: "markdown" }
+      - { label: "ফাইল", name: "file", widget: "file" }
