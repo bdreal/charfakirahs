@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>চর ফকিরা উচ্চ বিদ্যালয়</h1>
+    <p>EIIN: 107317 | প্রতিষ্ঠার সাল: ০৯/১২/১৯৮৯</p>
+    <p>ডাকঘর - চরফকিরা, উপজেলা- কোম্পানিগঞ্জ, জেলা - নোয়াখালী</p>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="academic.html">ACADEMIC</a>
+    <a href="admission.html">ADMISSION</a>
+    <a href="teacher.html">TEACHER</a>
+    <a href="results.html">RESULTS</a>
+    <a href="contact.html">CONTACT</a>
+  </nav>
+
+  <div class="notice-board">
+    <div class="notices" id="notices">
+      <span>নোটিশ লোড হচ্ছে...</span>
+    </div>
+  </div>
+
+  <main style="padding: 20px;">
+    <h2>স্বাগতম!</h2>
+    <p>এই ওয়েবসাইটটি চর ফকিরা উচ্চ বিদ্যালয়ের অফিসিয়াল ওয়েবসাইট। এখানে আপনি ভর্তি তথ্য, পরীক্ষার ফলাফল, শিক্ষক তালিকা সহ যাবতীয় তথ্য পাবেন।</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
+  </footer>
+
+  <script>
+    fetch('content/notices/notice1.md')
+      .then(res => res.text())
+      .then(data => {
+        document.getElementById('notices').innerHTML = '<marquee>' + data.split('\n')[0] + '</marquee>';
+      });
+  </script>
+</body>
+</html>
