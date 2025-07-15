@@ -47,5 +47,23 @@
         document.getElementById('notices').innerHTML = '<marquee>' + data.split('\n')[0] + '</marquee>';
       });
   </script>
-</body>
+
+    <footer style="text-align:center; padding:20px; font-family: 'Nikosh', sans-serif;">
+        Developed by <a href="https://www.facebook.com/pablemahmud" target="_blank">Mahmud Sir</a>
+    </footer>
+    </body>
+    
 </html>
+
+<section id="gallery" style="text-align:center; padding:20px;">
+    <h2 style="font-family: 'Nikosh', sans-serif;">ছবির গ্যালারি</h2>
+    <div class="gallery" style="display:flex; flex-wrap:wrap; justify-content:center;">
+        <!-- Gallery items will be auto-generated via Eleventy + Netlify CMS -->
+        {% for item in collections.gallery %}
+        <div style="margin:10px; text-align:center;">
+            <img src="{{ item.data.image }}" alt="{{ item.data.name }}" style="max-width:200px; border:1px solid #ccc; border-radius:5px;">
+            <p style="font-family:'Nikosh', sans-serif;">{{ item.data.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</section>
