@@ -1,22 +1,23 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html>
   <head>
     <meta charset="UTF-8" />
     <title>Char Fakira Admin Panel</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
     <style>
-      body, input, textarea, select, button {
+      body {
         font-family: 'Noto Sans Bengali', sans-serif;
       }
     </style>
-    <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
-    <script>
-      window.CMS_MANUAL_INIT = true;
-    </script>
   </head>
   <body>
+    <!-- This div is required for CMS to render -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script src="https://unpkg.com/netlify-cms@^2.10.0/dist/netlify-cms.js"></script>
+
     <script>
+      window.CMS_MANUAL_INIT = true;
       CMS.init({
         config: {
           backend: {
