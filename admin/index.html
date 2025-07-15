@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="bn">
   <head>
     <meta charset="UTF-8" />
-    <title>Char Fakira Admin</title>
+    <title>Char Fakira Admin Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali&display=swap" rel="stylesheet">
     <style>
       body, input, textarea, select, button {
@@ -26,24 +27,25 @@
           public_folder: "/images/uploads",
           collections: [
             {
-              name: "pages",
-              label: "Pages",
-              folder: "content/pages",
-              create: true,
-              slug: "{{slug}}",
-              fields: [
-                { label: "Title", name: "title", widget: "string" },
-                { label: "Body", name: "body", widget: "markdown" }
-              ]
-            },
-            {
               name: "notices",
-              label: "Notices",
+              label: "নোটিশ",
               folder: "content/notices",
               create: true,
               slug: "{{slug}}",
               fields: [
-                { label: "Notice Text", name: "body", widget: "markdown" }
+                { label: "নোটিশ", name: "body", widget: "markdown" }
+              ]
+            },
+            {
+              name: "teachers",
+              label: "শিক্ষকবৃন্দ",
+              folder: "content/teachers",
+              create: true,
+              slug: "{{slug}}",
+              fields: [
+                { label: "নাম", name: "name", widget: "string" },
+                { label: "পদবি", name: "designation", widget: "string" },
+                { label: "বিষয়", name: "subject", widget: "string" }
               ]
             }
           ]
