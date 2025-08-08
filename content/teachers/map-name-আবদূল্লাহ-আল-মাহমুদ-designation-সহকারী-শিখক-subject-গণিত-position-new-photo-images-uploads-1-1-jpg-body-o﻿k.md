@@ -5,4 +5,3 @@ subject: গণিত
 position: new
 photo: /images/uploads/1-1-.jpg
 ---
-s﻿
