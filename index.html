@@ -9,6 +9,23 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
+    /* ন্যাভিগেশন মেনু */
+    nav {
+      background: #34495e; /* ব্যাকগ্রাউন্ড রঙ */
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     /* নোটিশ বোর্ড */
     .notice-board {
       background: #ffeb3b;
@@ -44,11 +61,20 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
+
+    /* হেডার */
+    header {
+      background: #34495e; /* ন্যাভের মতো একই রঙ */
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
     /* ফুটার */
     footer {
       text-align: center;
       padding: 10px;
-      background: #34495e; /* হেডারের মতো রঙ */
+      background: #34495e; /* ন্যাভের মতো একই রঙ */
       color: white;
       font-size: 16px;
     }
@@ -66,7 +92,7 @@
   </style>
 </head>
 <body>
-  <header style="background: #2c3e50; color: white; padding: 15px; text-align: center;">
+  <header>
     <h1>চর ফকিরা উচ্চ বিদ্যালয়</h1>
     <p>EIIN: 107317 | প্রতিষ্ঠার সাল: ০৯/১২/১৯৮৯</p>
     <p>ডাকঘর - চর ফকিরা, উপজেলা- কোম্পানিগঞ্জ, জেলা - নোয়াখালী</p>
