@@ -1,16 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
     <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <header>
+    {{ if .IsHome }}
         <h1>{{ .Title }}</h1>
-    </header>
-    <main>
-        {{ .Content }}
-    </main>
+        <main>
+            {{ .Content }}
+        </main>
+    {{ else if .IsPage }}
+        <main>
+            <h1>{{ .Title }}</h1>
+            {{ .Content }}
+        </main>
+    {{ else }}
+        <h1>{{ .Title }}</h1>
+        {{ range .Pages }}
+        <div class="card">
+            {{ if .Params.photo }}
+                <img src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+            {{ end }}
+            <h2>{{ .Params.name }}</h2>
+            <p>{{ .Params.designation }}</p>
+            <p>বিষয়: {{ .Params.subject }}</p>
+            <div>{{ .Content }}</div>
+        </div>
+        {{ end }}
+    {{ end }}
 </body>
 </html>
