@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>শিক্ষকবৃন্দ</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>আমাদের শিক্ষকগণ</h1>
+    {{ range .Pages }}
+    <div class="teacher-card">
+        <img src="{{ .Params.photo }}" alt="{{ .Params.name }}">
+        <h2>{{ .Params.name }}</h2>
+        <p>{{ .Params.designation }}</p>
+        <p>বিষয়: {{ .Params.subject }}</p>
+        <div>{{ .Content }}</div>
+    </div>
+    {{ end }}
+</body>
+</html>
