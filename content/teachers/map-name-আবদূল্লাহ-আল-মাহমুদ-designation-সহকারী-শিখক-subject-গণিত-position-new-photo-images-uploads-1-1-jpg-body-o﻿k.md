@@ -5,4 +5,4 @@ subject: গণিত
 position: new
 photo: /images/uploads/1-1-.jpg
 ---
-o﻿k
+M﻿athematic teacher
