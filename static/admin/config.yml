@@ -7,22 +7,20 @@ public_folder: "/images/uploads"
 
 collections:
   - name: "notices"
-    label: "Notices"
+    label: "নোটিশ"
     folder: "content/notices"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
+      - { label: "নোটিশ", name: "body", widget: "markdown" }
   - name: "teachers"
-    label: "Teachers"
+    label: "শিক্ষকবৃন্দ"
     folder: "content/teachers"
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Name", name: "name", widget: "string" }
-      - { label: "Position", name: "position", widget: "string" }
-      - { label: "Photo", name: "photo", widget: "image" }
-      - { label: "Bio", name: "body", widget: "markdown" }
+      - { label: "নাম", name: "name", widget: "string" }
+      - { label: "পদবি", name: "designation", widget: "string" }
+      - { label: "বিষয়", name: "subject", widget: "string" }
+      - { label: "ছবি", name: "photo", widget: "image" }
+      - { label: "জীবনবৃত্তান্ত", name: "body", widget: "markdown" }
