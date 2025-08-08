@@ -6,6 +6,8 @@
   <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- ফন্ট অসাম লিংক (Facebook আইকনের জন্য) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* নোটিশ বোর্ড স্টাইল */
     .notice-board {
@@ -42,6 +44,25 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 10px;
+      background: #222;
+      color: white;
+      font-size: 16px;
+    }
+    footer a {
+      color: white;
+      text-decoration: underline;
+    }
+    footer a:hover {
+      color: #3b5998; /* Facebook ব্লু */
+    }
+    .footer-facebook {
+      margin-right: 5px;
+      color: #3b5998;
+    }
   </style>
 </head>
 <body>
@@ -75,16 +96,10 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
-  </footer>
-
-  <footer style="text-align:center; margin-top: 40px; padding: 10px;">
-    <span style="color: red;">Designed by</span> 
-    <a href="https://www.facebook.com/pablemahmud" target="_blank" 
-       style="color: white; text-decoration: underline;"
-       onmouseover="this.style.color='black'" 
-       onmouseout="this.style.color='white'">
-      Mahmud Sir
+    &copy; 2025 চর ফকিরা উচ্চ বিদ্যালয় | 
+    Designed by 
+    <a href="https://www.facebook.com/pablemahmud" target="_blank">
+      <i class="fab fa-facebook footer-facebook"></i>Mahmud Sir
     </a>
   </footer>
 </body>
