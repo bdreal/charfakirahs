@@ -1,0 +1,11 @@
+---
+title: "নোটিশ বোর্ড"
+---
+
+{{ range .Pages }}
+<div class="notice-item">
+    <h2>{{ .Params.title }}</h2>
+    <p>প্রকাশের তারিখ: {{ .Params.date }}</p>
+    <div>{{ .Content }}</div>
+</div>
+{{ end }}
