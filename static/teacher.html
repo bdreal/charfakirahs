@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>আমাদের শিক্ষকগণ</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+        @import url('https://fonts.maateen.me/nikosh/font.css');
+
+        body {
+            font-family: 'Nikosh', 'Baloo Da 2', Arial, sans-serif;
+            background: #f7f9fc;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background-color: #4a148c;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: #6a1b9a;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        nav a:hover {
+            background: #8e24aa;
+        }
+        .teachers-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .teacher-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+            flex: 1 1 45%;
+            margin-bottom: 20px;
+        }
+        .teacher-card.first-teacher {
+            flex: 1 1 100%;
+        }
+        .teacher-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .teacher-card p {
+            margin: 5px 0;
+            font-size: 1em;
+            color: #7f8c8d;
+        }
+        @media (min-width: 768px) {
+            .teachers-container .teacher-card:not(.first-teacher) {
+                flex-basis: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 767px) {
+            .teachers-container {
+                flex-direction: column;
+            }
+            .teacher-card {
+                flex-basis: 100%;
+            }
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">হোম</a></li>
+                <li><a href="/teacher.html">শিক্ষকগণ</a></li>
+            </ul>
+        </nav>
+        <h1>আমাদের শিক্ষকগণ</h1>
+    </header>
+
+    <div class="teachers-container">
+        <div class="teacher-card first-teacher">
+            <img src="/images/uploads/teacher-abdullah.jpg" alt="আবদূল্লাহ আল মাহমুদ স্যারের ছবি">
+            <h2>আবদূল্লাহ আল মাহমুদ</h2>
+            <p>পদবী: সহকারী শিক্ষক</p>
+            <p>বিষয়: গণিত</p>
+        </div>
+        <div class="teacher-card">
+            <img src="/images/uploads/teacher-b.jpg" alt="অন্য একজন শিক্ষকের ছবি">
+            <h2>অন্য একজন শিক্ষক</h2>
+            <p>পদবী: সহকারী শিক্ষক</p>
+            <p>বিষয়: বাংলা</p>
+        </div>
+        <div class="teacher-card">
+            <img src="/images/uploads/teacher-c.jpg" alt="আরও একজন শিক্ষকের ছবি">
+            <h2>আরও একজন শিক্ষক</h2>
+            <p>পদবী: সহকারী শিক্ষক</p>
+            <p>বিষয়: ইংরেজি</p>
+        </div>
+    </div>
+</body>
+</html>
