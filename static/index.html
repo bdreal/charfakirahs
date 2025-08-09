@@ -4,45 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  
   <link rel="stylesheet" href="css/style.css">
-  <style>
-    /* নোটিশ বোর্ড স্টাইল */
-    .notice-board {
-      background: #ffeb3b;
-      padding: 8px 0;
-      display: flex;
-      align-items: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      font-size: 18px;
-      color: #b71c1c;
-      font-weight: bold;
-    }
-    .notice-icon {
-      margin-left: 10px;
-      margin-right: 6px;
-      font-size: 20px;
-      flex-shrink: 0;
-    }
-    .notice-label {
-      margin-right: 10px;
-      flex-shrink: 0;
-    }
-    .notice-container {
-      overflow: hidden;
-      white-space: nowrap;
-      flex: 1;
-    }
-    .notice-text {
-      display: inline-block;
-      padding-left: 100%;
-      animation: scroll-left 12s linear infinite;
-    }
-    @keyframes scroll-left {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(-100%); }
-    }
-  </style>
 </head>
 <body>
   <header>
@@ -69,23 +35,18 @@
     </div>
   </div>
 
-  <main style="padding: 20px;">
+  <main>
     <h2>স্বাগতম!</h2>
     <p>এই ওয়েবসাইটটি চর ফকিরা উচ্চ বিদ্যালয়ের অফিসিয়াল ওয়েবসাইট। এখানে আপনি ভর্তি তথ্য, পরীক্ষার ফলাফল, শিক্ষক তালিকা সহ যাবতীয় তথ্য পাবেন।</p>
   </main>
 
   <footer>
-    <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
+    <p class="copyright-text">&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
+    <div class="designed-by">
+      <span>Designed by</span> 
+      <a href="https://www.facebook.com/pablemahmud" target="_blank">Mahmud Sir</a>
+    </div>
   </footer>
 
-  <footer style="text-align:center; margin-top: 40px; padding: 10px;">
-    <span style="color: red;">Designed by</span> 
-    <a href="https://www.facebook.com/pablemahmud" target="_blank" 
-       style="color: white; text-decoration: underline;"
-       onmouseover="this.style.color='black'" 
-       onmouseout="this.style.color='white'">
-      Mahmud Sir
-    </a>
-  </footer>
 </body>
 </html>
