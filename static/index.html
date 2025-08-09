@@ -1,4 +1,3 @@
-{{ define "main" }}
 <!DOCTYPE html>
 <html lang="bn">
 <head>
@@ -6,7 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    /* নোটিশ বোর্ড স্টাইল */
+    .notice-board {
+      background: #ffeb3b;
+      padding: 8px 0;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      font-size: 18px;
+      color: #b71c1c;
+      font-weight: bold;
+    }
+    .notice-icon {
+      margin-left: 10px;
+      margin-right: 6px;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .notice-label {
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+    .notice-container {
+      overflow: hidden;
+      white-space: nowrap;
+      flex: 1;
+    }
+    .notice-text {
+      display: inline-block;
+      padding-left: 100%;
+      animation: scroll-left 12s linear infinite;
+    }
+    @keyframes scroll-left {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -16,13 +52,13 @@
   </header>
 
   <nav>
-    <a href="/">HOME</a>
-    <a href="/about/">ABOUT</a>
-    <a href="/academic/">ACADEMIC</a>
-    <a href="/admission/">ADMISSION</a>
-    <a href="/teacher/">TEACHER</a>
-    <a href="/results/">RESULTS</a>
-    <a href="/contact/">CONTACT</a>
+    <a href="index.html">HOME</a>
+    <a href="about.html">ABOUT</a>
+    <a href="academic.html">ACADEMIC</a>
+    <a href="admission.html">ADMISSION</a>
+    <a href="teacher.html">TEACHER</a>
+    <a href="results.html">RESULTS</a>
+    <a href="contact.html">CONTACT</a>
   </nav>
 
   <div class="notice-board">
@@ -33,20 +69,23 @@
     </div>
   </div>
 
-  <main>
+  <main style="padding: 20px;">
     <h2>স্বাগতম!</h2>
     <p>এই ওয়েবসাইটটি চর ফকিরা উচ্চ বিদ্যালয়ের অফিসিয়াল ওয়েবসাইট। এখানে আপনি ভর্তি তথ্য, পরীক্ষার ফলাফল, শিক্ষক তালিকা সহ যাবতীয় তথ্য পাবেন।</p>
   </main>
 
   <footer>
     <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
-    <p>
-      <span style="color: red;">Designed by</span> 
-      <a href="https://www.facebook.com/pablemahmud" target="_blank" class="designer-link">
-        <img src="{{ "images/facebook-icon.png" | relURL }}" alt="Facebook" class="fb-icon"> Mahmud Sir
-      </a>
-    </p>
+  </footer>
+
+  <footer style="text-align:center; margin-top: 40px; padding: 10px;">
+    <span style="color: red;">Designed by</span> 
+    <a href="https://www.facebook.com/pablemahmud" target="_blank" 
+       style="color: white; text-decoration: underline;"
+       onmouseover="this.style.color='black'" 
+       onmouseout="this.style.color='white'">
+      Mahmud Sir
+    </a>
   </footer>
 </body>
 </html>
-{{ end }}
