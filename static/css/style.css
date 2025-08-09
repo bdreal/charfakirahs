@@ -1,7 +1,7 @@
 /* Google Font */
 body {
-  /* ইংরেজি ফন্ট 'Lato' সেট করা হয়েছে */
-  font-family: 'Lato', 'Hind Siliguri', sans-serif;
+  /* বাংলা ফন্টের জন্য 'Baloo Da 2' এবং ইংরেজি ফন্টের জন্য 'Lato' */
+  font-family: 'Lato', 'Baloo Da 2', cursive;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -15,13 +15,14 @@ header {
   text-align: center;
   padding: 15px;
 }
-header h1 {
-  margin: 0;
-  font-size: 28px;
+header h1, header p {
+  font-family: 'Baloo Da 2', cursive; /* হেডার লেখায় বাংলা ফন্ট নিশ্চিত করা হলো */
 }
 header p {
-  margin: 5px 0;
   font-size: 14px;
+}
+header h1 {
+    font-size: 28px;
 }
 
 /* Navigation */
@@ -55,6 +56,7 @@ nav a:hover {
   font-size: 18px;
   color: #4B0082;
   font-weight: bold;
+  font-family: 'Baloo Da 2', cursive;
 }
 .notice-icon {
   margin-left: 10px;
@@ -87,6 +89,7 @@ main {
 }
 main h2, main p {
     text-align: center;
+    font-family: 'Baloo Da 2', cursive; /* মূল অংশের লেখায় বাংলা ফন্ট নিশ্চিত করা হলো */
 }
 
 /* Footer */
@@ -100,9 +103,11 @@ footer .copyright-text {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
+  font-family: 'Baloo Da 2', cursive;
 }
 footer .designed-by {
   font-size: 14px;
+  font-family: 'Lato', sans-serif;
 }
 footer .designed-by span {
     color: #FFC107;
@@ -112,12 +117,12 @@ footer .designed-by span {
 /* আইকন এবং টেক্সট ঠিকভাবে দেখানোর জন্য স্টাইল */
 footer .designed-by a {
   color: white;
-  text-decoration: none; /* আন্ডারলাইন তুলে দেওয়া হলো */
+  text-decoration: none;
   display: inline-flex;
   align-items: center;
-  gap: 6px; /* আইকন এবং টেক্সটের মাঝে ফাঁকা জায়গা */
+  gap: 6px;
 }
 footer .designed-by a:hover {
-  text-decoration: underline; /* হোভার করলে আন্ডারলাইন আসবে */
+  text-decoration: underline;
   color: #ddd;
 }
