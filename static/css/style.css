@@ -1,7 +1,7 @@
 /* Google Font */
 body {
-  /* ইংরেজি ফন্ট 'Lato' সেট করা হয়েছে */
-  font-family: 'Lato', 'Hind Siliguri', sans-serif;
+  /* বাংলা ও ইংরেজি ফন্ট সেট করা হয়েছে */
+  font-family: 'Poppins', 'Hind Siliguri', sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-  background: #6A0DAD; 
+  background: #6A0DAD; /* হেডার ব্যাকগ্রাউন্ড কালার (পার্পেল) */
   color: white;
   text-align: center;
   padding: 15px;
@@ -29,7 +29,7 @@ nav {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background: #8E44AD; 
+  background: #8E44AD; /* মেন্যু বারের জন্য ভিন্ন পার্পেল কালার */
   padding: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -38,7 +38,7 @@ nav a {
   text-decoration: none;
   padding: 8px 15px;
   font-weight: bold;
-  font-family: 'Lato', sans-serif; /* মেন্যু টেক্সটের জন্য ইংরেজি ফন্ট */
+  font-family: 'Poppins', sans-serif; /* মেন্যু টেক্সটের জন্য ইংরেজি ফন্ট */
 }
 nav a:hover {
   background: rgba(255,255,255,0.2);
@@ -91,7 +91,7 @@ main h2, main p {
 
 /* Footer */
 footer {
-  background: #6A0DAD;
+  background: #6A0DAD; /* ফুটার ব্যাকগ্রাউন্ড কালার (পার্পেল) */
   color: white;
   text-align: center;
   padding: 15px;
@@ -99,25 +99,19 @@ footer {
 footer .copyright-text {
   margin: 0;
   padding: 0;
-  margin-bottom: 8px;
+  margin-bottom: 8px; /* দুটি লাইনের মাঝে একটু ফাঁকা জায়গা */
 }
 footer .designed-by {
   font-size: 14px;
 }
 footer .designed-by span {
-    color: #FFC107;
+    color: #FFC107; /* Designed by লেখার জন্য ভিন্ন রঙ */
     font-weight: bold;
 }
-
-/* আইকন এবং টেক্সট ঠিকভাবে দেখানোর জন্য স্টাইল */
 footer .designed-by a {
   color: white;
-  text-decoration: none; /* আন্ডারলাইন তুলে দেওয়া হলো */
-  display: inline-flex;
-  align-items: center;
-  gap: 6px; /* আইকন এবং টেক্সটের মাঝে ফাঁকা জায়গা */
+  text-decoration: underline;
 }
 footer .designed-by a:hover {
-  text-decoration: underline; /* হোভার করলে আন্ডারলাইন আসবে */
   color: #ddd;
 }
