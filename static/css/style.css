@@ -1,6 +1,7 @@
 /* Google Font */
 body {
-  font-family: 'Baloo Da 2', cursive;
+  /* ইংরেজি ফন্ট 'Lato' সেট করা হয়েছে */
+  font-family: 'Lato', 'Hind Siliguri', sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -9,7 +10,7 @@ body {
 
 /* Header */
 header {
-  background: #6A0DAD; /* হেডার ব্যাকগ্রাউন্ড কালার (পার্পেল) */
+  background: #6A0DAD; 
   color: white;
   text-align: center;
   padding: 15px;
@@ -26,38 +27,33 @@ header p {
 /* Navigation */
 nav {
   display: flex;
-  flex-wrap: wrap; /* এটি মোবাইল ডিভাইসে মেনুগুলোকে নিচে নিচে দেখাবে */
+  flex-wrap: wrap;
   justify-content: center;
-  background: #6A0DAD; /* নেভিগেশন ব্যাকগ্রাউন্ড কালার (পার্পেল) */
+  background: #8E44AD; 
   padding: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 nav a {
   color: white;
   text-decoration: none;
   padding: 8px 15px;
   font-weight: bold;
+  font-family: 'Lato', sans-serif; /* মেন্যু টেক্সটের জন্য ইংরেজি ফন্ট */
 }
 nav a:hover {
   background: rgba(255,255,255,0.2);
   border-radius: 5px;
 }
 
-/* ছোট স্ক্রিনে মেনু বার ঠিক করা হয়েছে */
-@media (max-width: 480px) {
-  nav {
-    /* এখানে কোনো কোডের প্রয়োজন নেই কারণ flex-wrap: wrap; ডিফল্টভাবে কাজ করবে */
-  }
-}
-
 /* Notice Board */
 .notice-board {
-  background: #E6E6FA; /* নোটিশ বোর্ডের জন্য হালকা পার্পেল */
+  background: #E6E6FA;
   padding: 8px 0;
   display: flex;
   align-items: center;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   font-size: 18px;
-  color: #4B0082; /* গাঢ় পার্পেল টেক্সট */
+  color: #4B0082;
   font-weight: bold;
 }
 .notice-icon {
@@ -89,44 +85,39 @@ nav a:hover {
 main {
   padding: 20px;
 }
+main h2, main p {
+    text-align: center;
+}
 
 /* Footer */
 footer {
-  background: #6A0DAD; /* ফুটার ব্যাকগ্রাউন্ড কালার (পার্পেল) */
+  background: #6A0DAD;
   color: white;
   text-align: center;
-  padding: 10px;
+  padding: 15px;
 }
-footer a {
-  color: white;
-  text-decoration: underline;
+footer .copyright-text {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
 }
-footer a:hover {
-  color: #ddd; /* হোভার করলে হালকা সাদা */
+footer .designed-by {
+  font-size: 14px;
+}
+footer .designed-by span {
+    color: #FFC107;
+    font-weight: bold;
 }
 
-/* Designed by Section */
-.footer-bottom {
-  background: #6A0DAD; /* ফুটার ব্যাকগ্রাউন্ড কালার (পার্পেল) */
+/* আইকন এবং টেক্সট ঠিকভাবে দেখানোর জন্য স্টাইল */
+footer .designed-by a {
   color: white;
-  text-align: center;
-  padding: 8px;
-  display: flex;
-  justify-content: center;
+  text-decoration: none; /* আন্ডারলাইন তুলে দেওয়া হলো */
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 6px; /* আইকন এবং টেক্সটের মাঝে ফাঁকা জায়গা */
 }
-.footer-bottom a {
-  color: white;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  text-decoration: underline;
-}
-.footer-bottom a:hover {
+footer .designed-by a:hover {
+  text-decoration: underline; /* হোভার করলে আন্ডারলাইন আসবে */
   color: #ddd;
-}
-.footer-bottom img {
-  width: 16px;
-  height: 16px;
 }
