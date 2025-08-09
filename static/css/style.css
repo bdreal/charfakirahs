@@ -1,7 +1,7 @@
 /* Google Font */
 body {
-  /* বাংলা ফন্টের জন্য 'Baloo Da 2' এবং ইংরেজি ফন্টের জন্য 'Lato' */
-  font-family: 'Lato', 'Baloo Da 2', cursive;
+  /* ডিফল্ট ফন্ট সেট করা হলো, বাংলা লেখার জন্য 'Baloo Da 2' */
+  font-family: 'Baloo Da 2', 'Lato', sans-serif;
   margin: 0;
   padding: 0;
   background: #f9f9f9;
@@ -15,14 +15,13 @@ header {
   text-align: center;
   padding: 15px;
 }
-header h1, header p {
-  font-family: 'Baloo Da 2', cursive; /* হেডার লেখায় বাংলা ফন্ট নিশ্চিত করা হলো */
+header h1 {
+  margin: 0;
+  font-size: 28px;
 }
 header p {
+  margin: 5px 0;
   font-size: 14px;
-}
-header h1 {
-    font-size: 28px;
 }
 
 /* Navigation */
@@ -34,12 +33,13 @@ nav {
   padding: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+/* মেন্যু টেক্সটের জন্য ইংরেজি ফন্ট */
 nav a {
   color: white;
   text-decoration: none;
   padding: 8px 15px;
   font-weight: bold;
-  font-family: 'Lato', sans-serif; /* মেন্যু টেক্সটের জন্য ইংরেজি ফন্ট */
+  font-family: 'Lato', sans-serif; 
 }
 nav a:hover {
   background: rgba(255,255,255,0.2);
@@ -56,7 +56,6 @@ nav a:hover {
   font-size: 18px;
   color: #4B0082;
   font-weight: bold;
-  font-family: 'Baloo Da 2', cursive;
 }
 .notice-icon {
   margin-left: 10px;
@@ -89,7 +88,6 @@ main {
 }
 main h2, main p {
     text-align: center;
-    font-family: 'Baloo Da 2', cursive; /* মূল অংশের লেখায় বাংলা ফন্ট নিশ্চিত করা হলো */
 }
 
 /* Footer */
@@ -103,8 +101,8 @@ footer .copyright-text {
   margin: 0;
   padding: 0;
   margin-bottom: 8px;
-  font-family: 'Baloo Da 2', cursive;
 }
+/* 'Designed by' লেখার জন্য ইংরেজি ফন্ট */
 footer .designed-by {
   font-size: 14px;
   font-family: 'Lato', sans-serif;
@@ -113,8 +111,6 @@ footer .designed-by span {
     color: #FFC107;
     font-weight: bold;
 }
-
-/* আইকন এবং টেক্সট ঠিকভাবে দেখানোর জন্য স্টাইল */
 footer .designed-by a {
   color: white;
   text-decoration: none;
