@@ -1,0 +1,100 @@
+/* সাধারণ স্টাইল */
+body {
+  margin: 0;
+  font-family: 'Baloo Da 2', sans-serif;
+  background: #f8f9fa;
+  color: #333;
+}
+
+/* হেডার */
+header {
+  background: #00695c; /* মেনুর মতো রঙ */
+  color: white;
+  text-align: center;
+  padding: 15px 10px;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+header p {
+  margin: 4px 0;
+}
+
+/* নেভিগেশন মেনু */
+nav {
+  background: #004d40; /* গাঢ় সবুজ */
+  text-align: center;
+}
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover {
+  background: #00796b;
+  color: yellow;
+}
+
+/* মূল কনটেন্ট */
+main {
+  padding: 20px;
+  background: white;
+  max-width: 1000px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ফুটার */
+footer {
+  background: #004d40; /* মেনুর মতো রঙ */
+  color: white;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+}
+footer a {
+  color: white;
+  text-decoration: underline;
+}
+footer a:hover {
+  color: yellow;
+}
+
+/* নোটিশ বোর্ড (HTML এ ইনলাইন স্টাইল বাদ দিয়ে এখানেও রাখতে পারতেন) */
+.notice-board {
+  background: #ffeb3b;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-size: 18px;
+  color: #b71c1c;
+  font-weight: bold;
+}
+.notice-icon {
+  margin-left: 10px;
+  margin-right: 6px;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+.notice-label {
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.notice-container {
+  overflow: hidden;
+  white-space: nowrap;
+  flex: 1;
+}
+.notice-text {
+  display: inline-block;
+  padding-left: 100%;
+  animation: scroll-left 12s linear infinite;
+}
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
