@@ -1,28 +1,52 @@
+{{ define "main" }}
 <!DOCTYPE html>
-<html>
+<html lang="bn">
 <head>
-    <title>{{ .Title }}</title>
-    <link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
 </head>
 <body>
-    {{ if .IsHome }}
-        <h1>{{ .Title }}</h1>
-        <main>
-            {{ .Content }}
-        </main>
-    {{ else }}
-        <h1>{{ .Title }}</h1>
-        {{ range .Pages }}
-        <div class="card">
-            {{ if .Params.photo }}
-                <img src="{{ .Params.photo }}" alt="{{ .Params.name }}">
-            {{ end }}
-            <h2>{{ .Params.name }}</h2>
-            <p>{{ .Params.designation }}</p>
-            <p>বিষয়: {{ .Params.subject }}</p>
-            <div>{{ .Content }}</div>
-        </div>
-        {{ end }}
-    {{ end }}
+  <header>
+    <h1>চর ফকিরা উচ্চ বিদ্যালয়</h1>
+    <p>EIIN: 107317 | প্রতিষ্ঠার সাল: ০৯/১২/১৯৮৯</p>
+    <p>ডাকঘর - চর ফকিরা, উপজেলা- কোম্পানিগঞ্জ, জেলা - নোয়াখালী</p>
+  </header>
+
+  <nav>
+    <a href="/">HOME</a>
+    <a href="/about/">ABOUT</a>
+    <a href="/academic/">ACADEMIC</a>
+    <a href="/admission/">ADMISSION</a>
+    <a href="/teacher/">TEACHER</a>
+    <a href="/results/">RESULTS</a>
+    <a href="/contact/">CONTACT</a>
+  </nav>
+
+  <div class="notice-board">
+    <div class="notice-icon">🔔</div>
+    <div class="notice-label">নোটিশ:</div>
+    <div class="notice-container">
+      <div class="notice-text">এই সাইটটি নির্মানাধীন অবস্থায় আছে।</div>
+    </div>
+  </div>
+
+  <main>
+    <h2>স্বাগতম!</h2>
+    <p>এই ওয়েবসাইটটি চর ফকিরা উচ্চ বিদ্যালয়ের অফিসিয়াল ওয়েবসাইট। এখানে আপনি ভর্তি তথ্য, পরীক্ষার ফলাফল, শিক্ষক তালিকা সহ যাবতীয় তথ্য পাবেন।</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
+    <p>
+      <span style="color: red;">Designed by</span> 
+      <a href="https://www.facebook.com/pablemahmud" target="_blank" class="designer-link">
+        <img src="{{ "images/facebook-icon.png" | relURL }}" alt="Facebook" class="fb-icon"> Mahmud Sir
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
+{{ end }}
