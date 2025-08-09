@@ -5,11 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>চর ফকিরা উচ্চ বিদ্যালয়</title>
   <link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
-  <!-- ফন্ট অসাম (Facebook আইকনের জন্য) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
   <style>
-    /* নোটিশ বোর্ড */
+    /* নোটিশ বোর্ড স্টাইল */
     .notice-board {
       background: #ffeb3b;
       padding: 8px 0;
@@ -44,29 +42,10 @@
       0% { transform: translateX(0); }
       100% { transform: translateX(-100%); }
     }
-    /* ফুটার */
-    footer {
-      text-align: center;
-      padding: 10px;
-      background: #2c3e50; /* হেডারের মতো রঙ */
-      color: white;
-      font-size: 16px;
-    }
-    footer a {
-      color: white;
-      text-decoration: underline;
-    }
-    footer a:hover {
-      color: #3b5998; /* Facebook ব্লু */
-    }
-    .footer-facebook {
-      margin-right: 5px;
-      color: #3b5998;
-    }
   </style>
 </head>
 <body>
-  <header style="background: #2c3e50; color: white; padding: 15px; text-align: center;">
+  <header>
     <h1>চর ফকিরা উচ্চ বিদ্যালয়</h1>
     <p>EIIN: 107317 | প্রতিষ্ঠার সাল: ০৯/১২/১৯৮৯</p>
     <p>ডাকঘর - চর ফকিরা, উপজেলা- কোম্পানিগঞ্জ, জেলা - নোয়াখালী</p>
@@ -97,12 +76,16 @@
 
   <footer>
     <p>&copy; 2025 চর ফকিরা উচ্চ বিদ্যালয়</p>
-    <p>
-      <span style="color: red;">Designed by</span> 
-      <a href="https://www.facebook.com/pablemahmud" target="_blank">
-        <i class="fab fa-facebook footer-facebook"></i>Mahmud Sir
-      </a>
-    </p>
+  </footer>
+
+  <footer style="text-align:center; margin-top: 40px; padding: 10px;">
+    <span style="color: red;">Designed by</span> 
+    <a href="https://www.facebook.com/pablemahmud" target="_blank" 
+       style="color: white; text-decoration: underline;"
+       onmouseover="this.style.color='black'" 
+       onmouseout="this.style.color='white'">
+      Mahmud Sir
+    </a>
   </footer>
 </body>
 </html>
